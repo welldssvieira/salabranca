@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; 
 }
 
 body{
@@ -20,7 +21,7 @@ body{
     flex-direction: column;
     font-family: "Geist", serif;
     font-size: 36px;
-    width: 700px;
+    width: 800px;
 }
 
 #cabecalho{
@@ -212,12 +213,6 @@ footer{
     font-weight: 400;
     font-size: 0.4em;
 }
-
-a {
-    -webkit-tap-highlight-color: transparent; 
-    outline: none;
-      
-  }
 
 @media (max-width: 700px) {
 
