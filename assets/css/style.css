@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: #f5f5f5; 
+}
+
+#conteudo{
+    padding:100px 50px;
+    flex-direction: column;
+    font-family: "Geist", serif;
+    font-size: 36px;
+    width: 700px;
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;   
+}
+
+#cabecalho .logomarca,
+#cabecalho .tema{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho .logomarca{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#cabecalho .tema{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+}
+
+#cabecalho .logomarca img,
+#cabecalho .tema img{
+    width: 30px;
+}
+
+#conteudo_principal{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#conteudo_principal .titulo_principal h1{
+    color: #262626;
+    font-family: "Geist", sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+#conteudo_principal .subtitulo_principal h2{
+    color: #646464;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-size: 0.5em;
+}
+
+#conteudo_principal .tag_atualizacao span{
+    color: #f44081;
+    font-weight: 500;
+    font-size: 0.4em;
+}
+
+#conteudo_principal .tag_atualizacao{
+    padding: 5px 8px;
+    background-color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: "IBM Plex Mono", serif;
+}
+
+#conteudo_principal{
+    margin: 40px 0;
+}
+
+#conteudo_principal .titulo_principal,
+#conteudo_principal .subtitulo_principal,
+#conteudo_principal .tag_atualizacao{
+    margin: 10px 0;
+}
+
+#blog {
+    height: auto;
+    background-color: #ebebeb;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+
+#blog .blog_titulo,
+#blog .blog_filtros,
+#blog .blog_artigos .artigo{
+    margin-top: 20px
+}
+
+
+#blog .blog_titulo h3{
+    color: #262626;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#blog .blog_filtros{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+#blog .blog_filtros .filtro p{
+    color: #262626;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-size: 0.6em;
+}
+
+#blog .blog_filtros .filtro{
+    color: #646464;
+    font-weight: 500;
+    font-size: 0.6em;
+    border: 1px solid #646464;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 3px 6px;
+}
+
+#blog .blog_filtros .filtro.selecionado{
+    color: #262626;
+    font-weight: 500;
+    border: 1px solid #646464;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 3px 8px;
+    background-color: #ffffff;
+}
+
+#blog .blog_artigos .artigo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px 6px;
+    color: #646464;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+#blog .blog_artigos .artigo:hover{
+    background-color: #f5f5f5;
+}
+
+#blog .blog_artigos .artigo .artigo_icone img{
+    width: 25px;
+}
+
+#blog .blog_artigos .artigo .artigo_titulo h4{
+    font-weight: 500;
+    font-size: 0.4em;
+}
+
+#blog .blog_artigos .artigo .artigo_data h4{
+    font-weight: 500;
+    font-size: 0.4em;
+}
+
+#blog .blog_artigos .artigo .artigo_tag{
+    font-weight: 400;
+    padding: 3px 8px;
+    color: #624312;
+    font-size: 0.3em;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #fbeed0;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: #262626;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-size: 0.4em;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent; 
+    outline: none;
+      
+  }
+
+@media (max-width: 700px) {
+
+    #blog{
+        padding: 60px 20px;
+    }
+
+    #conteudo {
+        padding: 100px 25px;
+        font-size: 32px;
+    }
+
+    #blog .blog_artigos .artigo{
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #blog .blog_artigos .artigo_icone,
+    #blog .blog_artigos .artigo_titulo,
+    #blog .blog_artigos .artigo_data,
+    #blog .blog_artigos .artigo_tag{
+        margin: 5px 0;
+    }
+}
