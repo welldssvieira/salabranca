@@ -203,6 +203,10 @@ body{
     background-color: #fbeed0;
 }
 
+#blog .blog_filtros .filtro:hover{
+    background-color: #f5f5f5;
+}
+
 footer{
     display: flex;
     align-items: center;

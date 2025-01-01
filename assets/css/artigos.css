@@ -20,8 +20,8 @@ body{
 }
 
 #artigo .cabecalho a{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -29,8 +29,12 @@ body{
     border-radius: 5px;
 }
 
+#artigo .cabecalho a:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
 #artigo .cabecalho a img{
-    width: 40px;
+    width: 30px;
 }
 
 #artigo{
@@ -138,10 +142,16 @@ body{
 }
 
 #conteudo_principal .bloco_conteudo .paragrafo p{
+    color: #646464;
     font-size: 0.5em;
     font-weight: 400; 
     letter-spacing: 0.3px;
     line-height: 25px;
+}
+
+#conteudo_principal .bloco_conteudo .paragrafo a{
+    text-decoration: underline;
+    color: #646464;
 }
 
 #conteudo_principal .hashtags{
@@ -163,6 +173,10 @@ body{
 
 #conteudo_principal .hashtags a:hover{
     background-color: #d6d6d6;
+}
+
+#artigo .cabecalho a{
+    margin-bottom: 30px;
 }
 
 #artigo .cabecalho_titulo,
